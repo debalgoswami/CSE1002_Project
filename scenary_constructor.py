@@ -32,3 +32,10 @@ pygame.draw.polygon(drawing_window,(73,61,38),((262,130),(273,108),(266,101),(28
 pygame.draw.polygon(drawing_window,(73,61,38),((266,101),(248,91),(241,128),(231,122),(217,125),(229,116),(236,118),(243,80),(260,84),(280,87)))#Mocha (RGB value - 73,61,38) The bark of the tree is being drawn 
 pygame.draw.polygon(drawing_window,(73,61,38),((260,92),(270,80),(288,73),(301,84),(306,99),(290,83),(280,87)))#Mocha (RGB value - 73,61,38) The bark of the tree is being drawn
 pygame.draw.polygon(drawing_window,(73,61,38),((257,92),(265,63),(269,55),(280,52),(295,46),(307,63),(293,54),(273,63),(274,92)))#Mocha (RGB value - 73,61,38) The tree is completed
+
+pygame.display.update()
+pygame.image.save(drawing_window,"house_101171605.bmp")
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            exit()
